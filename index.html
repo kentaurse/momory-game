@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Train your brain" content="Train your brain and have fun by playing this memory game!">
+    <meta name="description" content="Train your brain and have fun by playing this memory game!">
+    <meta name="keywords" content="Memory game, memory card, funny, animals, concentration">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-large.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-small.png">
+    <!-- Link to Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <!-- Facebook Connection -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+        nonce="L23WhqAw"></script>
+    <!-- Title -->
+    <title>Train your Brain!</title>
+</head>
+<body>
+    <div class="text-area">
+        <h1 class="train-your-brain">Train your Brain!</h1>
+        <p>Flip two cards and find matching pairs!</p>
+        <div class="count-moves">
+            <p>Number of moves: <span id="nr-of-moves">0</span></p>
+        </div>
+    </div>
+    <div class="selection">
+        <label for="level">Select Level:</label>
+        <select id="level">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="expert">Expert</option>
+        </select>
+        <div>
+            <button class="restart" id="start">Start</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="game-container">
+        </div>
+        <div class="push">
+        </div>
+    </div>
+    <!-- Dialog section  -->
+    <dialog id="newgame">
+        <p>Are you sure you want to start a new game?</p>
+        <button id="confirm">New Game</button>
+        <button id="cancel">Cancel</button>
+    </dialog>
+    <dialog id="youwon">
+        <h3>Congratulations!</h3>
+        <img src="assets/images/gamewon.webp" alt="Game won" style="width: 150px;">
+        <p>You have found all matches!</p>
+        <p>Well done!</p>
+        <button id="close">Close</button>
+    </dialog>
+    <!-- Footer section - Facebook share button -->
+    <footer class="footer">
+        <div id="social-media">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fclaudiainsweden.github.io%2Ftrain-your-brain%2F&amp;src=sdkpreparse"
+                class="fb-share" data-href="https://claudiainsweden.github.io/train-your-brain/" data-layout="" data-size=""
+                target="_blank">
+                <span class="share"><i class="fa-brands fa-facebook-f"> </i>Share</span>
+            </a>
+        </div>
+    </footer>
+    <!-- Link to JavaScript file -->
+    <script src="assets/js/script.js"></script>
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/ad02dcfcb8.js" crossorigin="anonymous"></script>
+    <!-- Facebook share script -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
+        nonce="jOsXbYlm"></script>
+</body>
+</html>
